@@ -1,0 +1,33 @@
+.nav {
+  border-bottom: none;
+  margin-bottom: 40px;
+
+  .ant-menu-item {
+    padding: 0 !important;
+    border: none !important;
+    margin: 0 16px;
+  }
+
+  .ant-menu-item::after {
+    border: none;
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease !important;
+    background: #000;
+    inset-inline: unset !important;
+  }
+
+  .ant-menu-item:hover::after {
+    width: 100%;
+  }
+}
+
+.calculation {
+  padding: 16px;
+
+  .title {
+    margin: 0;
+  }
+}
